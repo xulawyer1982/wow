@@ -1343,6 +1343,7 @@ sniffer:
 
 tun:
   enable: false
+  inet6-address:
   stack: mixed
   dns-hijack:
     - "any:53"
