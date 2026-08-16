@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Surge"
+  name: "wow"
   text: "轻量高效的 mi鸿蒙内核 管理面板"
   tagline: "无冗余的内核配置管理与订阅自动合并转换系统"
   actions:

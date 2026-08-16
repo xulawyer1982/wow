@@ -1,4 +1,4 @@
-name: Build surge-amd64
+name: Build wow-amd64
 
 on:
   workflow_dispatch:
@@ -44,10 +44,10 @@ jobs:
 
       - name: 构建 Go 后端（amd64）
         run: |
-          GOOS=linux GOARCH=amd64 go build -tags vue -ldflags="-s -w" -o surge
+          GOOS=linux GOARCH=amd64 go build -tags vue -ldflags="-s -w" -o wow
  
-      - name: 上传 surge 二进制作为 Artifact
+      - name: 上传 wow 二进制作为 Artifact
         uses: actions/upload-artifact@v6
         with:
-          name: surge
-          path: surge
+          name: wow
+          path: wow
