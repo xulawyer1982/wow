@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Fluxor",
+  title: "Surge",
   description: "Mihomo 内核轻量级管理面板与订阅生成系统使用手册",
   // @ts-ignore
-  base: process.env.CF_PAGES ? '/' : '/fluxor/',
+  base: process.env.CF_PAGES ? '/' : '/surge/',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
@@ -26,7 +26,7 @@ export default defineConfig({
           text: '关于项目',
           collapsed: false,
           items: [
-            { text: '什么是 Fluxor', link: '/guide/introduction' },
+            { text: '什么是 Surge', link: '/guide/introduction' },
             { text: '功能特性', link: '/guide/features' }
           ]
         },
@@ -67,7 +67,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/shuangji66/fluxor' }
+      { icon: 'github', link: 'https://github.com/xulawyer1982/surge' }
     ]
   }
 })

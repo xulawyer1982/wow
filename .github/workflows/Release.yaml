@@ -1,4 +1,4 @@
-name: Build and Release fluxor
+name: Build and Release surge
 
 on:
   workflow_dispatch:
@@ -45,13 +45,13 @@ jobs:
 
       - name: 构建 Go 后端（${{ matrix.arch }}）
         run: |
-          GOOS=linux CGO_ENABLED=0 GOARCH=${{ matrix.arch }} go build -tags vue -ldflags="-s -w" -o fluxor-${{ matrix.arch }}
-
-      - name: 上传 fluxor-${{ matrix.arch }} 作为 Artifact
+          GOOS=linux CGO_ENABLED=0 GOARCH=${{ matrix.arch }} go build -tags vue -ldflags="-s -w" -o surge-${{ matrix.arch }}
+ 
+      - name: 上传 surge-${{ matrix.arch }} 作为 Artifact
         uses: actions/upload-artifact@v6
         with:
-          name: fluxor-${{ matrix.arch }}
-          path: fluxor-${{ matrix.arch }}
+          name: surge-${{ matrix.arch }}
+          path: surge-${{ matrix.arch }}
 
   release:
     needs: build
@@ -94,7 +94,7 @@ jobs:
           tag_name: ${{ steps.get_version.outputs.VERSION }}
           name: ${{ steps.get_version.outputs.VERSION }}
           body: ${{ steps.get_notes.outputs.NOTES }}
-          files: artifacts/**/fluxor-*
+          files: artifacts/**/surge-*
           draft: false
           prerelease: false
           allow_updates: true
