@@ -909,9 +909,6 @@ onUnmounted(() => {
                 class="px-3 py-2 text-xs rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-accent outline-none w-full">
                 <option value="light">{{ t('config.theme_light') }}</option>
                 <option value="dark">{{ t('config.theme_dark') }}</option>
-                <option value="purple">{{ t('config.theme_purple') }}</option>
-                <option value="pink">{{ t('config.theme_pink') }}</option>
-                <option value="green">{{ t('config.theme_green') }}</option>
                 <option value="blue">{{ t('config.theme_blue') }}</option>
                 <option value="system">{{ t('config.theme_system') }}</option>
               </select>

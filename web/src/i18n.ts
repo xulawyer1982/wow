@@ -325,6 +325,7 @@ const messages = {
     'config.theme_purple': '基佬紫',
     'config.theme_pink': '可爱粉',
     'config.theme_green': '抹茶绿',
+    
     'config.theme_blue': '冰海蓝',
     'config.theme_system': '跟随系统',
     'config.language': '界面语言',
